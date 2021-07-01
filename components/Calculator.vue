@@ -40,8 +40,9 @@ function calculatecups(cups, validatedcups) {
   const finalrest = firstmodule % 23;
 
   const cupsletters = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'];
+  const cupscountry = cups.match(/([A-Z]{2})/gm);
 
-  return cupsnumber + cupsletters[finalmodule] + cupsletters[finalrest];
+  return (cupscountry?cupscountry[0]:'ES') + cupsnumber + cupsletters[finalmodule] + cupsletters[finalrest];
 }
 
 export default {
