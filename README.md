@@ -1,5 +1,6 @@
 # calculacups
 
+This is a simple calculator of CUPS numbers and letters validating the correct pattern
 ## Build Setup
 
 ```bash
