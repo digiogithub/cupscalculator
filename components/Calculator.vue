@@ -47,14 +47,13 @@ function calculatecups(cups, validatedcups) {
 export default {
   data() {
     return {
-      originalcups: 'ES0021000013098661',
+      originalcups: '',
       convertedcups: ''
     }
   },
   methods: {
     convertcups(){
       this.convertedcups = '';
-      const value = 'ES0021000013098661'; //MC
 
       const allcups = this.originalcups.split('\n');
       allcups.forEach(cups => {
